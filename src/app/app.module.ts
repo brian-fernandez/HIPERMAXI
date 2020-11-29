@@ -20,25 +20,25 @@ import { NoLoginGuard } from './seguridad/no-login.guard';
 
 const routes: Routes = [
   { path: 'frutasyverduras',
-   component: Seccion1Component , canActivate: [LoginGuard]
+   component: Seccion1Component, canActivate: [LoginGuard]
 
   },
   {
     path: 'bebidas',
-    component: Seccion2Component , canActivate: [LoginGuard]
+    component: Seccion2Component, canActivate: [LoginGuard]
   },
   {
     path: 'carne-embutido',
-    component: Seccion3Component , canActivate: [LoginGuard]
+    component: Seccion3Component, canActivate: [LoginGuard]
   },
   {
     path: 'login',
-    component: LoginComponent, canActivate: [LoginGuard]
+    component: LoginComponent , canActivate: [NoLoginGuard]
   },
 
   {
     path: 'registre',
-    component: RegistroComponent, canActivate: [LoginGuard]
+    component: RegistroComponent, canActivate: [NoLoginGuard]
   },
   {
     path: '',
@@ -49,10 +49,10 @@ const routes: Routes = [
   ,
   {
     path: 'inicio',
-   component: InicioComponent, canActivate: [NoLoginGuard]
+   component: InicioComponent , canActivate: [LoginGuard]
   },
   { path: 'opciones',
-   component: OpcionesComponent , canActivate: [LoginGuard]
+   component: OpcionesComponent, canActivate: [LoginGuard]
 
   },
   { path: 'opcionesadmin',

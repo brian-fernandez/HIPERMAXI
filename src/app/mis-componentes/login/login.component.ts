@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor (private rutalogin:Router) { }
+  constructor (private rutalogin: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,15 +21,24 @@ export class LoginComponent implements OnInit {
     if (form.value.email === 'brian@gmail.com' && form.value.contra === '123') {
       localStorage.setItem('email', form.value.email);
       this.rutalogin.navigate(['']);
-      const ocultar = document.getElementById('session');
-      ocultar.style.display = 'none';
-      const mostrar = document.getElementById('cuenta');
+      const ocultar = document.getElementById('navv');
+      ocultar.style.display = 'block';
+      const mostrar = document.getElementById('foot');
       mostrar.style.display = 'block';
 
       console.log('hola');
+      console.log(localStorage);
+
     }
     else{
       alert("No existe el usuario");
     }
+
   }
+
+  registro()
+  {
+    this.rutalogin.navigate(['registre']);
+  }
+
 }

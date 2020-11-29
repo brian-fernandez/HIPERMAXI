@@ -15,12 +15,11 @@ export class NoLoginGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      if (localStorage.getItem('email') === 'null') {
+      if (localStorage.getItem('email') === null) {
         return true;
 
       }else{
-
-        this.rutaLogin.navigate(['login']);
+        this.rutaLogin.navigate(['inicio']);
         return false;
        }
   }

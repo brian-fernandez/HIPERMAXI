@@ -15,15 +15,13 @@ export class NavVarComponent implements OnInit {
 
 salir()
 {
-  const mostrar = document.getElementById('cuenta');
 
 
-  mostrar.style.display = 'none';
-      const ocultar = document.getElementById('session');
-      ocultar.style.display = 'block';
-      this.rutalogin.navigate(['']);
+
+      this.rutalogin.navigate(['login']);
 
       localStorage.removeItem('email');
+      console.log(localStorage);
       return
 }
 
