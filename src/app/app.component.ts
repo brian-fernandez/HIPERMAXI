@@ -10,11 +10,13 @@ export class AppComponent {
   title = 'hipermaxi';
 
 
-  ngOnInit(){
+  ngOnInit (){
     (function ($) {
       $(document).ready(function(){
-        console.log("Hello from jQuery!");
+        console.log('Hello from jQuery!');
       });
     })(jQuery);
   }
+
+  
 }

@@ -15,29 +15,30 @@ import { OpcionesComponent } from './mis-componentes/opciones/opciones.component
 import { OpcionesadminComponent } from './mis-componentes/opcionesadmin/opcionesadmin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginGuard } from './seguridad/login.guard';
+import { NoLoginGuard } from './seguridad/no-login.guard';
 
 
 const routes: Routes = [
   { path: 'frutasyverduras',
-   component: Seccion1Component
+   component: Seccion1Component , canActivate: [LoginGuard]
 
   },
   {
     path: 'bebidas',
-    component: Seccion2Component
+    component: Seccion2Component , canActivate: [LoginGuard]
   },
   {
     path: 'carne-embutido',
-    component: Seccion3Component
+    component: Seccion3Component , canActivate: [LoginGuard]
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent, canActivate: [LoginGuard]
   },
 
   {
     path: 'registre',
-    component: RegistroComponent
+    component: RegistroComponent, canActivate: [LoginGuard]
   },
   {
     path: '',
@@ -48,14 +49,14 @@ const routes: Routes = [
   ,
   {
     path: 'inicio',
-   component: InicioComponent,canActivate:[LoginGuard]
+   component: InicioComponent, canActivate: [NoLoginGuard]
   },
   { path: 'opciones',
-   component: OpcionesComponent
+   component: OpcionesComponent , canActivate: [LoginGuard]
 
   },
   { path: 'opcionesadmin',
-  component: OpcionesadminComponent
+  component: OpcionesadminComponent, canActivate: [LoginGuard]
 
  }
 ];
@@ -84,7 +85,7 @@ const routes: Routes = [
 
 
   ],
-  providers: [LoginGuard],
+  providers: [LoginGuard, NoLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
