@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       console.log('hola');
     }
     else{
-      console.log('adios');
+      alert("No existe el usuario");
     }
   }
 }

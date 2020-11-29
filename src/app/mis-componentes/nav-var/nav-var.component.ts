@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavVarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rutalogin:Router) { }
 
   ngOnInit(): void {
   }
+
+salir()
+{
+  const mostrar = document.getElementById('cuenta');
+      mostrar.style.display = 'none';
+      const ocultar = document.getElementById('session');
+      ocultar.style.display = 'block';
+      this.rutalogin.navigate(['']);
+}
 
 }

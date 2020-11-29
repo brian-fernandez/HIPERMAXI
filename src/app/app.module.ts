@@ -14,6 +14,7 @@ import { Seccion3Component } from './mis-componentes/seccion3/seccion3.component
 import { OpcionesComponent } from './mis-componentes/opciones/opciones.component';
 import { OpcionesadminComponent } from './mis-componentes/opcionesadmin/opcionesadmin.component';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginGuard } from './seguridad/login.guard';
 
 
 const routes: Routes = [
@@ -47,7 +48,7 @@ const routes: Routes = [
   ,
   {
     path: 'inicio',
-   component: InicioComponent
+   component: InicioComponent,canActivate:[LoginGuard]
   },
   { path: 'opciones',
    component: OpcionesComponent
@@ -83,7 +84,7 @@ const routes: Routes = [
 
 
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

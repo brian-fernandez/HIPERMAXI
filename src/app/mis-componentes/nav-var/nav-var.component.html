@@ -40,9 +40,22 @@
           </div>
         </li>
 
-        <li class="nav-item"  id="cuenta" style="display: none;">
-          <a class="nav-link" href="Enlaces/opciones-user/index.html">MI CUENTA</a>
+
+        <li class="nav-item dropdown" id="cuenta" style="display: none;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            MI CUENTA
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <P class="dropdown-item" routerLink="opciones" >OPCIONES</P>
+            <a class="dropdown-item" (click)="salir()" id="dos">SALIR</a>
+
+
+          </div>
         </li>
+
+
+
       </ul>
 
     </div>
