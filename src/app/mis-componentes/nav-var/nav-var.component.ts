@@ -22,6 +22,10 @@ salir()
 
       localStorage.removeItem('email');
       console.log(localStorage);
+      const ocultar = document.getElementById('navv');
+      ocultar.style.display = 'none';
+      const mostrar = document.getElementById('foot');
+      mostrar.style.display = 'none';
       return
 }
 
