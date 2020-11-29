@@ -48,7 +48,15 @@ const routes: Routes = [
   {
     path: 'inicio',
    component: InicioComponent
-  }
+  },
+  { path: 'opciones',
+   component: OpcionesComponent
+
+  },
+  { path: 'opcionesadmin',
+  component: OpcionesadminComponent
+
+ }
 ];
 
 @NgModule({
@@ -70,6 +78,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes)
+
 
 
 
