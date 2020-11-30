@@ -20,6 +20,10 @@ export class NoLoginGuard implements CanActivate {
 
       }else{
         this.rutaLogin.navigate(['inicio']);
+        const ocultar = document.getElementById('navv');
+        ocultar.style.display = 'flex';
+        const mostrar = document.getElementById('foot');
+        mostrar.style.display = 'block';
         return false;
        }
   }

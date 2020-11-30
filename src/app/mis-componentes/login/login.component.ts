@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('email', form.value.email);
       this.rutalogin.navigate(['']);
       const ocultar = document.getElementById('navv');
-      ocultar.style.display = 'block';
+      ocultar.style.display = 'flex';
       const mostrar = document.getElementById('foot');
       mostrar.style.display = 'block';
 
