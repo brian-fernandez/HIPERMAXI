@@ -18,6 +18,11 @@ import { LoginGuard } from './seguridad/login.guard';
 import { NoLoginGuard } from './seguridad/no-login.guard';
 
 
+
+
+
+
+
 const routes: Routes = [
   { path: 'frutasyverduras',
    component: Seccion1Component, canActivate: [LoginGuard]
@@ -88,5 +93,7 @@ const routes: Routes = [
   providers: [LoginGuard, NoLoginGuard],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }
 
