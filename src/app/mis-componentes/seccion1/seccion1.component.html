@@ -1,5 +1,5 @@
-
-
+<!-- Carrito de compras -->
+<app-carrito></app-carrito>
 
 
 
@@ -238,621 +238,399 @@
   </div>
   <div class="cont-vegetales">
     <h2>Vegetales</h2>
+    <!--<img src="../../../assets/img/cotenedor1/Verduras/brocoli.jpg" alt="">-->
     <!--Seccion: hortalizas-->
     <div class="seccion" id="hortalizas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/brocoli.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Brocoli</p>
-        </div>
-        <div class="precio">
-          <p>2 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/brocoli.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto1">Brocoli</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto2">2</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success agregar-Producto" onclick="guardar1()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>
+                  Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/zanahorias.jpg" alt="">
-        </div>
-        <div>
-          <p class="Nombre">Zanahoria</p>
-        </div>
-        <div class="precio">
-          <p>2 bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/zanahorias.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto3">Zanahoria</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto4">2</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success agregar-Producto" onclick="guardar2()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/arbeja.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Guisantes</p>
-        </div>
-        <div class="precio">
-          <p>0.50 ctv</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/arbeja.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto5">Guisantes</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto6">0.50</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect3">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success agregar-Producto" onclick="guardar3()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: tomates-->
-    <div class="seccion" id="tomates">
+  </div>
+  <!--Seccion: tomates-->
+  <div class="seccion" id="tomates">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/tomates.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Tomate Redondo Liso</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/tomates.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto7">Tomate Redondo Liso</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto8">1.50</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect4">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar4()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/tomate-pera.jpg" alt="">
-        </div>
-        <div>
-          <p class="Nombre">Tomate pera</p>
-        </div>
-        <div class="precio">
-          <p>1 bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/tomate-pera.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto9">Tomate pera</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto10">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect5">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar5()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/tomate-cherry.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Tomate cherry</p>
-        </div>
-        <div class="precio">
-          <p>0.50 ctv</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/tomate-cherry.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto11">Tomate cherry</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto12">0.50</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect6">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar6()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion:  papas-->
-    <div class="seccion" id="papas">
+  </div>
+  <!--Seccion:  papas-->
+  <div class="seccion" id="papas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/papas.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Papa blanca</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/papas.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto13">Papa blanca</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto14">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect7">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar7()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/papa-imilla.jpg" alt="">
-        </div>
-        <div>
-          <p class="Nombre">Papa imilla</p>
-        </div>
-        <div class="precio">
-          <p>1 bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/papa-imilla.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto15">Papa imilla</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto16">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect8">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success"  onclick="guardar8()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/papa-negra.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Papa negra</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/papa-negra.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto17">Papa negra</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto18">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect9">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar9()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion:  lechugas-->
-    <div class="seccion" id="lechugas">
+  </div>
+  <!--Seccion:  lechugas-->
+  <div class="seccion" id="lechugas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/lechuga_batavia.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Lechuga batavia</p>
-        </div>
-        <div class="precio">
-          <p>5 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/lechuga_batavia.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto19">Lechuga batavia</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto20">5</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect10">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar10()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/lechuga_francesa.jpg" alt="">
-        </div>
-        <div>
-          <p class="Nombre">Lechuga francesa</p>
-        </div>
-        <div class="precio">
-          <p>6 bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/lechuga_francesa.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto21">Lechuga francesa</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto22">6</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect11">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar11()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/lechuga_romana.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Lechuga romana</p>
-        </div>
-        <div class="precio">
-          <p>5 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/lechuga_romana.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto23">Lechuga romana</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto24">5</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect12" >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar12()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion:  cebollas-->
-    <div class="seccion" id="cebollas">
+  </div>
+  <!--Seccion:  cebollas-->
+  <div class="seccion" id="cebollas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/cebolla-blanca.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Cebolla blanca</p>
-        </div>
-        <div class="precio">
-          <p>0.80 ctv</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/cebolla-blanca.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto25">Cebolla blanca</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto26">0.80</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect13">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar13()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/cebolla-puerros.jpg" alt="">
-        </div>
-        <div>
-          <p class="Nombre">Cebolla puerro</p>
-        </div>
-        <div class="precio">
-          <p>3 x 5 bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/cebolla-puerros.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto27">Cebolla puerro</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto28">3</p><p>Bs</p>
+          </div>
+          
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect14">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success"  onclick="guardar14()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Verduras/cebolla_morada.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Cebolla morada</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Verduras/cebolla_morada.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto29">Cebolla morada</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto30">2</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect15">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar15()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
+  </div>
   </div>
 </div>
 <hr>
@@ -899,741 +677,471 @@
     <!--Seccion: citricos-->
     <div class="seccion" id="citricos">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/limones.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Limón</p>
-        </div>
-        <div class="precio">
-          <p>0.80ctv</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/limones.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto31">Limón</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto32">0.80</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect16">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar16()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/naranja.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Naranja</p>
-        </div>
-        <div class="precio">
-          <p>0.80 ctv</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/naranja.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto33">Naranja</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto34">0.80</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect17">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar17()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/toronja.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Toronja</p>
-        </div>
-        <div class="precio">
-          <p>1.50 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/toronja.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto35">Toronja</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto36">2</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect18">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar18()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: melones-->
-    <div class="seccion" id="melones">
+  </div>
+  <!--Seccion: melones-->
+  <div class="seccion" id="melones">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/melon.jpeg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Melon</p>
-        </div>
-        <div class="precio">
-          <p>10 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/melon.jpeg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto37">Melon</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto38">10</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect19">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success"  onclick="guardar19()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/melon-sandia.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Sandia</p>
-        </div>
-        <div class="precio">
-          <p>30 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/melon-sandia.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto39">Sandia</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto40">30</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect20">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar20()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/papaya.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Papaya</p>
-        </div>
-        <div class="precio">
-          <p>12 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/papaya.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto41">Papaya</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto42">12</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect21">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar21()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: frutas secas-->
-    <div class="seccion" id="frutas-secas">
+  </div>
+  <!--Seccion: frutas secas-->
+  <div class="seccion" id="frutas-secas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/Nuez.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Bolsa de nuez</p>
-        </div>
-        <div class="precio">
-          <p>25 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/Nuez.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto43">Bolsa de nuez</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto44">25</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect22">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar22()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/almendras.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Bolsa de almendras</p>
-        </div>
-        <div class="precio">
-          <p>30 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/almendras.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto45">Bolsa de almendras</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto46">30</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect23">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar23()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/pasas.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Bolsa de pasas</p>
-        </div>
-        <div class="precio">
-          <p>15 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/pasas.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto47">Bolsa de pasas</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto48">15</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect24">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar24()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: platanos-->
-    <div class="seccion" id="platanos">
+  </div>
+  <!--Seccion: platanos-->
+  <div class="seccion" id="platanos">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/bananas.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Platano</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 10 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/bananas.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto49">Platano</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto50">10</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect25">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar25()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/platano-freir.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Platano de freir</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 16 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/platano-freir.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto51">Platano de freir</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto52">16</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect26">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar26()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/platanos-pequeños.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Platano dominico</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 10 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/platanos-pequeños.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto53">Platano dominico</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto54">10</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect27">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar27()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: manzanas-->
-    <div class="seccion" id="manzanas">
+  </div>
+  <!--Seccion: manzanas-->
+  <div class="seccion" id="manzanas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/manzanas.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Manzana roja</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/manzanas.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto55">Manzana roja</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto56">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect28">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar28()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/manzana-verde.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Manzana verde</p>
-        </div>
-        <div class="precio">
-          <p>1.50 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/manzana-verde.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto57">Manzana verde</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto58">1.50</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect29">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar29()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/manzana-amarilla.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Manzana amarilla</p>
-        </div>
-        <div class="precio">
-          <p>1 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/manzana-amarilla.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto59">Manzana amarilla</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p id="Producto60">1</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect30">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar30()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
-    <!--Seccion: uvas-->
-    <div class="seccion" id="uvas">
+  </div>
+  <!--Seccion: uvas-->
+  <div class="seccion" id="uvas">
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/uva-verde.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Uva verde</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 10 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/uva-verde.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto61">Uva verde</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto62">10</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect31">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar31()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/uvas-azules.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Uva azul</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 20 Bs.</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/uvas-azules.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto63">Uva azul</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto64">20</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect32">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar32()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
       <div class="producto">
-        <div>
-          <img src="../../../assets/img/cotenedor1/Frutas/Uvas.jpg" alt="">
-        </div>
-        <div class="Nombre">
-          <p>Uva guinda</p>
-        </div>
-        <div class="precio">
-          <p>Ramo 12 Bs</p>
-        </div>
-        <div class="comprar">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Cantidad
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">1</button>
-              <button class="dropdown-item" type="button">2</button>
-              <button class="dropdown-item" type="button">3</button>
-              <button class="dropdown-item" type="button">4</button>
-              <button class="dropdown-item" type="button">5</button>
-              <button class="dropdown-item" type="button">6</button>
-              <button class="dropdown-item" type="button">7</button>
-              <button class="dropdown-item" type="button">8</button>
-              <button class="dropdown-item" type="button">9</button>
-              <button class="dropdown-item" type="button">10</button>
-              <button class="dropdown-item" type="button">11</button>
-              <button class="dropdown-item" type="button">12</button>
-            </div>
+          <div>
+              <img src="../../../assets/img/cotenedor1/Frutas/Uvas.jpg" alt="">
           </div>
-          <button class="btn btn-outline-success">
-            <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg> Comprar
-          </button>
-        </div>
+          <div class="Nombre">
+              <p id="Producto65">Uva guinda</p>
+          </div>
+          <div class="precio" style="display: flex; flex-direction: row; justify-content: center;">
+              <p>Ramo</p><p id="Producto66">12</p><p>Bs</p>
+          </div>
+          <div class="comprar">
+              <select class="form-control" id="exampleFormControlSelect33">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+              </select>
+              <button class="btn btn-outline-success" onclick="guardar33()">
+                  <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg> Comprar
+              </button>
+          </div>
       </div>
-    </div>
+  </div>
 
 
   </div>

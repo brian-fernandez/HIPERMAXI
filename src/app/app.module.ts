@@ -1,6 +1,9 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//Inicio servicio 
+import { CargarScriptsService } from './cargar-scripts.service';
+//Fin servicio
 
 import { AppComponent } from './app.component';
 import { NavVarComponent } from './mis-componentes/nav-var/nav-var.component';
@@ -16,6 +19,7 @@ import { OpcionesadminComponent } from './mis-componentes/opcionesadmin/opciones
 import { RouterModule, Routes } from '@angular/router';
 import { LoginGuard } from './seguridad/login.guard';
 import { NoLoginGuard } from './seguridad/no-login.guard';
+import { CarritoComponent } from './mis-componentes/carrito/carrito.component';
 
 
 
@@ -78,7 +82,8 @@ const routes: Routes = [
     Seccion2Component,
     Seccion3Component,
     OpcionesComponent,
-    OpcionesadminComponent
+    OpcionesadminComponent,
+    CarritoComponent
 
   ],
   imports: [
@@ -90,7 +95,7 @@ const routes: Routes = [
 
 
   ],
-  providers: [LoginGuard, NoLoginGuard],
+  providers: [LoginGuard, NoLoginGuard,CargarScriptsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
