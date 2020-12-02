@@ -9,8 +9,8 @@ import { CargarScriptsService } from "src/app/cargar-scripts.service";
 export class Seccion1Component implements OnInit {
 
   constructor( private _CargaScripts:CargarScriptsService) {
-    _CargaScripts.Carga(["carrito"])
-   }
+    _CargaScripts.Carga(["seccion1"])
+  }
 
   ngOnInit(): void {
   }

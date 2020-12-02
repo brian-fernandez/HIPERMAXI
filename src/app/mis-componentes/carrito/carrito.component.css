@@ -13,8 +13,6 @@
 .ventana{
     width: 40%; 
     margin: 0 5%  0 35%;
-    background-color: orangered;
-    display: block;
 }
 .titulos-productos .titulos{
     text-align: center;
