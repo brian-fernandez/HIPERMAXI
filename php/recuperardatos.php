@@ -14,6 +14,6 @@ while($reg = mysqli_fetch_array($registro))
 {
 $dat = $reg;
 }
-
-echo $dat;
+$cadj = json_decode($dat);
+echo $cadj;
 ?>;
