@@ -1,7 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//Inicio servicio 
+//Inicio servicio
 import { CargarScriptsService } from './cargar-scripts.service';
 //Fin servicio
 
@@ -20,6 +20,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginGuard } from './seguridad/login.guard';
 import { NoLoginGuard } from './seguridad/no-login.guard';
 import { CarritoComponent } from './mis-componentes/carrito/carrito.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -85,11 +87,15 @@ const routes: Routes = [
     OpcionesadminComponent,
     CarritoComponent
 
+
+
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+
 
 
 
@@ -99,6 +105,7 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+
+
  }
 
