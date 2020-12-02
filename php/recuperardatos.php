@@ -14,6 +14,8 @@ while($reg = mysqli_fetch_array($registro))
 {
 $dat = $reg;
 }
-$cadj = json_decode($dat);
-echo $cadj;
+$cod = json_decode($dat);
+echo $cod;
+header('Content-type: application/json');
+
 ?>;
