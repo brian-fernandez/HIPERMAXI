@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CargarScriptsService } from "src/app/cargar-scripts.service";
 declare  var jQuery:  any;
 
 @Component({
@@ -8,7 +9,9 @@ declare  var jQuery:  any;
 })
 export class AppComponent {
   title = 'hipermaxi';
-
+  constructor( private _CargaScripts:CargarScriptsService) {
+    _CargaScripts.Carga(["carrito"])
+  }
 
   ngOnInit (){
     (function ($) {
