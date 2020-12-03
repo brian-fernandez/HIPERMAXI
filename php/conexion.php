@@ -1,5 +1,5 @@
 <?php
-  function getConexion()
+  function retornarconexion()
   {
     $con = mysqli_connect("localhost","root","","usuarios");
     return $con;
