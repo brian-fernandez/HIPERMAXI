@@ -31,6 +31,12 @@ export class LoginComponent implements OnInit {
       console.log('hola');
       console.log(localStorage);
 
+
+
+
+
+      const mostrarcarrito = document.getElementById('idVentanaCarrito');
+      mostrarcarrito.style.display = 'block';
     }
     else{
       alert("No existe el usuario");

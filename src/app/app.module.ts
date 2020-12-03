@@ -69,7 +69,7 @@ const routes: Routes = [
   { path: 'opcionesadmin',
   component: OpcionesadminComponent, canActivate: [LoginGuard]
 
- }
+ },
 ];
 
 @NgModule({
