@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 require("conexion.php");
 
 $con = retornarconexion();
-$mostrardatos = mysqli_query($con,"SELECT codigo,email,password FROM usuarios");
+$mostrardatos = mysqli_query($con,"SELECT cod_id,email,password FROM usuarios");
 
 $da = [];
 
