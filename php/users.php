@@ -14,8 +14,8 @@ class Pelicula extends DB{
     }
 
     function obtenerPersona($id){
-        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE id = :id');
-        $query->execute(['id' => $id]);
+        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE cod_id = :cod_id');
+        $query->execute(['cod_id' => $id]);
         return $query;
     }
 

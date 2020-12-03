@@ -1,6 +1,6 @@
 <?php
 
-include_once 'pelicula.php';
+include_once 'users.php';
 
 class ApiPeliculas{
 
