@@ -14,28 +14,34 @@ export class OpcionesadminComponent implements OnInit {
   tab1() {
 
 
-    console.log(1);
+
     document.getElementById('usuario-caja').style.display = 'block';
-    console.log(2);
+
     document.getElementById('compra-caja').style.display = 'none';
-    console.log(3);
+
     document.getElementById('editar-caja').style.display = 'none';
-    console.log(4);
+
     document.getElementById('tarjeta-caja').style.display = 'none';
-    console.log(5);
+
     document.getElementById('añadir-caja').style.display = 'none';
-    console.log(6);
+
     document.getElementById('lista-producto-caja').style.display = 'none';
-    console.log(7);
+
 
     document.getElementById('tab-1').style.backgroundColor = '#ff7712';
-    console.log(8);
+
     document.getElementById('tab-2').style.backgroundColor = 'white';
-    console.log(9);
+
+
     document.getElementById('tab-3').style.backgroundColor = 'white';
+    ;
     document.getElementById('tab-4').style.backgroundColor = 'white';
+
+
     document.getElementById('tab-5').style.backgroundColor = 'white';
+
     document.getElementById('tab-6').style.backgroundColor = 'white';
+
 
 
 
@@ -105,6 +111,46 @@ export class OpcionesadminComponent implements OnInit {
     document.getElementById('tarjeta-caja').style.display = 'block';
     document.getElementById('añadir-caja').style.display = 'none';
     document.getElementById('lista-producto-caja').style.display = 'none';
+
+
+
+  }
+  tab5() {
+    document.getElementById('tab-1').style.backgroundColor = 'white';
+    document.getElementById('tab-2').style.backgroundColor = 'white';
+    document.getElementById('tab-3').style.backgroundColor = 'white';
+    document.getElementById('tab-4').style.backgroundColor = 'white';
+    document.getElementById('tab-5').style.backgroundColor = '#ff7712';
+    document.getElementById('tab-6').style.backgroundColor = 'white';
+
+
+
+    document.getElementById('usuario-caja').style.display = 'none';
+    document.getElementById('compra-caja').style.display = 'none';
+    document.getElementById('editar-caja').style.display = 'none';
+    document.getElementById('tarjeta-caja').style.display = 'none';
+    document.getElementById('añadir-caja').style.display = 'block';
+    document.getElementById('lista-producto-caja').style.display = 'none';
+
+
+
+  }
+  tab6() {
+    document.getElementById('tab-1').style.backgroundColor = 'white';
+    document.getElementById('tab-2').style.backgroundColor = 'white';
+    document.getElementById('tab-3').style.backgroundColor = 'white';
+    document.getElementById('tab-4').style.backgroundColor = 'white';
+    document.getElementById('tab-5').style.backgroundColor = 'white';
+    document.getElementById('tab-6').style.backgroundColor = '#ff7712';
+
+
+
+    document.getElementById('usuario-caja').style.display = 'none';
+    document.getElementById('compra-caja').style.display = 'none';
+    document.getElementById('editar-caja').style.display = 'none';
+    document.getElementById('tarjeta-caja').style.display = 'none';
+    document.getElementById('añadir-caja').style.display = 'none';
+    document.getElementById('lista-producto-caja').style.display = 'block';
 
 
 
