@@ -11,6 +11,8 @@ export class OpcionesadminComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
   tab1() {
 
 
@@ -34,7 +36,7 @@ export class OpcionesadminComponent implements OnInit {
 
 
     document.getElementById('tab-3').style.backgroundColor = 'white';
-    ;
+
     document.getElementById('tab-4').style.backgroundColor = 'white';
 
 
@@ -221,7 +223,7 @@ export class OpcionesadminComponent implements OnInit {
     document.getElementById('exampleFormControlFile1').style.display = 'block';
 
     document.getElementById('form2').style.display = 'block';
-    ;
+
     document.getElementById('edit').style.display = 'none';
     document.getElementById('fin').style.display = 'block';
     document.getElementById('cancelar').style.display = 'block';
@@ -254,5 +256,188 @@ export class OpcionesadminComponent implements OnInit {
     alert('TARJETA AÑADIDA');
   }
 
+producto_tab_1()
+{
+  document.getElementById('Categoria').innerHTML = 'Frutas y verduras';
+
+  document.getElementById('frutas').style.display = 'block';
+  document.getElementById('Bebidas').style.display = 'none';
+  document.getElementById('Carne').style.display = 'none';
+  document.getElementById('cantidad').style.display = 'block';
+  document.getElementById('nombrepr').style.display = 'block';
+
+}
+
+producto_tab_2()
+{
+  document.getElementById('Categoria').innerHTML = 'Bebidas';
+
+  document.getElementById('frutas').style.display = 'none';
+  document.getElementById('Bebidas').style.display = 'block';
+  document.getElementById('Carne').style.display = 'none';
+  document.getElementById('cantidad').style.display = 'block';
+  document.getElementById('nombrepr').style.display = 'block';
+}
+
+producto_tab_3()
+{
+  document.getElementById('Categoria').innerHTML = 'Carne y Embutidos';
+
+  document.getElementById('frutas').style.display = 'none';
+  document.getElementById('Bebidas').style.display = 'none';
+  document.getElementById('Carne').style.display = 'block';
+  document.getElementById('cantidad').style.display = 'block';
+  document.getElementById('nombrepr').style.display = 'block';
+}
+
+v_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Hortalizas';
+}
+v_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'Tomates';
+}
+v_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Papa';
+}
+v_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Lechuga';
+}
+v_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Cebolla';
+}
+
+f_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Citricos';
+}
+f_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'Melones';
+}
+f_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Frutas Secas';
+}
+f_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Platanos';
+}
+f_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Manzana';
+}
+f_6()
+{
+  document.getElementById('subcategoria').innerHTML = 'Uva';
+}
+
+r_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Coca cola';
+}
+r_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'Jugos del valle';
+}
+r_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Jugos tampico';
+}
+r_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Agua vital';
+}
+r_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Fanta & Sprite';
+}
+
+
+b_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Cerveza';
+}
+b_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'SixPack';
+}
+b_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Smirnoff';
+}
+b_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Tragos';
+}
+b_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Vinos';
+}
+b_6()
+{
+  document.getElementById('subcategoria').innerHTML = 'Tequila';
+}
+
+
+c_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Lomo';
+}
+c_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'Chuletas';
+}
+c_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Costillar';
+}
+c_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Cuadril';
+}
+c_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Carne Molida';
+}
+
+e_1()
+{
+  document.getElementById('subcategoria').innerHTML = 'Chorizo empaquetado';
+}
+e_2()
+{
+  document.getElementById('subcategoria').innerHTML = 'Chorizo p granel';
+}
+e_3()
+{
+  document.getElementById('subcategoria').innerHTML = 'Salchichas';
+}
+e_4()
+{
+  document.getElementById('subcategoria').innerHTML = 'Jamon en barra';
+}
+e_5()
+{
+  document.getElementById('subcategoria').innerHTML = 'Mortadela empaquetada';
+}
+e_6()
+{
+  document.getElementById('subcategoria').innerHTML = 'Paté de higado';
+}
+
+anadirproducto()
+{
+  location.reload();
+  alert('Producto Añadido');
+
+
+
+
+}
 
 }
